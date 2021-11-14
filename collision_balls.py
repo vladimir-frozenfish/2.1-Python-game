@@ -46,6 +46,11 @@ while life_game:  # цикл пока life_game == true
         xB[i] += vB[i] * math.cos(aB[i])
         yB[i] += vB[i] * math.sin(aB[i])
         pygame.draw.circle(win, cB[i], (xB[i], yB[i]), rB[i])
+        """отображение векторов по направлению движения 
+        первый (черный) - без учета скорости
+        второй (белый) - с учетом скорости"""
+        pygame.draw.line(win, (0, 0, 0), (xB[i], yB[i]), (xB[i] + rB[i] * math.cos(aB[i]), yB[i] + rB[i] * math.sin(aB[i])), width=1)
+        pygame.draw.line(win, (255, 255, 255), (xB[i], yB[i]), (xB[i] + 5*vB[i] * math.cos(aB[i]), yB[i] + 5*vB[i] * math.sin(aB[i])), width=4)
 
     # задержка 10 мс
     pygame.time.delay(10)
