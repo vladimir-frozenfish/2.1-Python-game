@@ -6,7 +6,7 @@ pygame.init()
 pygame.display.set_caption('Collision of balls')
 
 width = 1200
-height = 900
+height = 700
 win = pygame.display.set_mode((width, height))
 # win = pygame.display.set_mode((0, 0), pygame.FULLSCREEN)
 
@@ -123,13 +123,6 @@ while life_game:  # цикл пока life_game == true
                     aB[j] = BB + W2
                     while aB[j] > math.pi: aB[j] -= 2 * math.pi
                     while aB[j] < -math.pi: aB[j] += 2 * math.pi
-
-
-
-
-
-
-
 
 
 pygame.quit()
