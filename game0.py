@@ -1,15 +1,15 @@
 import pygame
 
-pygame.init() # запускает pygame
+pygame.init()   # запускает pygame
 
-win = pygame.display.set_mode((750,750)) # определение размера окна
-pygame.display.set_caption("Моя первая игра") # аименование игры в окне
-pygame.display.set_icon(pygame.image.load("images\ikonka.png")) # вставка иконки в окне
+win = pygame.display.set_mode((750,750))    # определение размера окна
+pygame.display.set_caption("Моя первая игра")   # наименование игры в окне
+pygame.display.set_icon(pygame.image.load("images\ikonka.png"))     # вставка иконки в окне
 
 
-clock = pygame.time.Clock() #для работы с заданной частотой кадров
+clock = pygame.time.Clock()  #для работы с заданной частотой кадров
 
-life_game = True # логическая переменная для жизни всего приложения
+life_game = True    # логическая переменная для жизни всего приложения
 
 FPS = 60 # для обновления скорости экрана
 
@@ -19,7 +19,7 @@ visota = 100
 shirina = 100
 speed = 5
 
-is_prigok = False # переменные для прыжка
+is_prigok = False   # переменные для прыжка
 prigok_count = 10
 
 

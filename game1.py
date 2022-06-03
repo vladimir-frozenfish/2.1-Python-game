@@ -60,20 +60,14 @@ while life_game: # цикл пока life_game == true
             prigok_count_ryad = 2
 
     if keys[pygame.K_q]: #при нажатии q квадратик расширяется от своего центра
-        visota += 2
-        shirina += 2
-        position_x -= 1
-        position_y -= 1
+        radius_shar += 1
 
     if keys[pygame.K_w]: #при нажатии w квадратик уменьшается от своего центра
-        visota -= 2
-        shirina -= 2
-        position_x += 1
-        position_y += 1
+        radius_shar -= 1
 
 
     win.fill((0,0,0)) #заполнение экрана черным цветом
-    pygame.draw.circle(win, (100, 20, 200), (position_x,position_y), radius_shar) #  отображение круга
+    pygame.draw.circle(win, (100, 20, 200), (position_x, position_y), radius_shar) #  отображение круга
     pygame.draw.rect(win, (255, 0, 0), (0, display_height-earth_eight, display_width, earth_eight))  # отображение земли
     #pygame.display.update() #обновление экрана
     pygame.display.flip()  # обновление экрана
