@@ -6,7 +6,7 @@ class MatrixLetters:
     def __init__(self, app):
         self.app = app
         # self.letters = '1234567890ЙЦУКЕНГШЩЗХЪФЫВАПРОЛДЖЭЯЧСМИТЬБЮ'
-        self.letters = [chr(int('0x30a0', 16) + i) for i in range(1, 95)]
+        self.letters = [chr(int('0x30a0', 16) + i) for i in range(96)]
         self.font_size = 10
         # self.font = pg.font.SysFont('arial', self.font_size, bold=True)
         self.font = pg.font.Font('./../fonts/MS Mincho.ttf', self.font_size, bold=True)
